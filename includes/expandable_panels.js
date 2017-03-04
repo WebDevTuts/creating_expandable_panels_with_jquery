@@ -1,5 +1,11 @@
 /*  JavaScript Document  */
 
+$(document).ready(function() {
+
+  inject_markup();
+
+});
+
 function inject_markup() {
 
   $('.expanding_panel').each(function() {
