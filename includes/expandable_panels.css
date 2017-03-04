@@ -59,6 +59,10 @@ footer { border-top: 2px solid #e7e2c9; height: 75px; color: rgba(0,0,0,.3); pad
 
 .expanding_panel .expanding_panel_content { padding: 1px 0; }
 
+.expanding_panel.open .expanding_panel_trigger::before {
+	content: '\2013 ';
+}
+	
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
