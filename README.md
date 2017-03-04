@@ -1,0 +1,3 @@
+### Lynda - Creating Expandable Panels With JQuery
+
+  Learn to create content that is expandable with a single click. This technique is very popular for providing more on-demand information, such as FAQs, biographies, or additional product information. This course shows how to create the HTML, CSS, and jQuery code needed for an expandable content panel that hides and shows content at the user's request. Learn how to inject additional markup, style the different panel elements, set trigger states, and animate the panel to reveal the hidden content.
