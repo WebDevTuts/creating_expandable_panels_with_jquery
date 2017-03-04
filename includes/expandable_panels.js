@@ -19,4 +19,19 @@ function inject_markup() {
 
   });
 
+  activate_panels();
+
+}
+
+function activate_panels() {
+
+  $('.expanding_panel .expanding_panel_trigger').on('click', function() {
+
+    var new_height = null;
+
+    var selected_panel = $(this).closest('.expanding_panel');
+    var selected_content = selected_panel.find('.expanding_panel_content_container');
+
+  });
+
 }
