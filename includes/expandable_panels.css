@@ -35,11 +35,25 @@ footer { border-top: 2px solid #e7e2c9; height: 75px; color: rgba(0,0,0,.3); pad
 
 /* CSS for Expanding Panels */
 
+.expanding_panel .expanding_panel_trigger {
+	curson: pointer;
+	color: #00a5d5;
+	font-weight: 600;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 
+.expanding_panel .expanding_panel_trigger:hover {
+	color: #555;
+	text-decoration: underline;
+}
 
-
-
-
+.expanding_panel .expanding_panel_trigger::before {
+	content: '+ ';
+	padding-right: 5px;	
+}
 
 /* Media Queries */
 
