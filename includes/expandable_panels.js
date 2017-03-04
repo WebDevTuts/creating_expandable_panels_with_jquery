@@ -32,6 +32,20 @@ function activate_panels() {
     var selected_panel = $(this).closest('.expanding_panel');
     var selected_content = selected_panel.find('.expanding_panel_content_container');
 
+    selected_panel.toggleClass('open');
+
+    if ( selected_panel.hasClass('open') ) {
+      new_height = selected_panel.find('.expanding_panel_content').outerHeight(true);
+    } else {
+      new_height = 0;
+    }
+
+    selected_content.animate({'height':new_height+'px'},1000,function() {
+      if(new_height != 0) {
+        $(this).removeAttr('style');
+      }
+    });
+
   });
 
 }
